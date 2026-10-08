@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scripts | Axonic</title><meta name="description" content="Axonic — Roblox script hub with 30+ supported games.">
+<link rel="icon" href="assets/axonic-logo.png"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="nav">
+ <div class="container nav-inner">
+  <a class="brand" href="index.html"><img src="assets/axonic-logo.png"><span>AXONIC</span></a>
+  <nav class="nav-links">
+   <a href="index.html">Home</a><a href="scripts.html">Scripts</a><a href="discord.html">Discord</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a>
+  </nav>
+  <a class="btn btn-primary" href="https://discord.gg/axonic" target="_blank">Join Discord</a>
+ </div>
+</header>
+
+<main><section class="page-hero"><div class="container">
+ <div class="kicker">Axonic Library</div><h1>Scripts</h1><p>Browse the Axonic script hub. We support 30+ games and are continuously expanding the library.</p>
+</div></section>
+<section class="section" style="padding-top:20px"><div class="container">
+ <input class="search" id="gameSearch" placeholder="Search games or scripts...">
+ <div class="grid" id="games">
+  <article class="card game" data-name="Lift a Cube"><div class="game-icon">LC</div><h3>Lift a Cube</h3><p>Axonic script for Lift a Cube.</p><div class="row"><span class="badge">Supported</span><a class="btn btn-ghost" href="https://discord.gg/axonic" target="_blank">Get Script</a></div></article>
+  <article class="card game" data-name="Steal a Egg"><div class="game-icon">SE</div><h3>Steal a Egg</h3><p>Axonic script for Steal a Egg.</p><div class="row"><span class="badge">Supported</span><a class="btn btn-ghost" href="https://discord.gg/axonic" target="_blank">Get Script</a></div></article>
+  <article class="card game" data-name="Driving Empire"><div class="game-icon">DE</div><h3>Driving Empire</h3><p>Axonic script for Driving Empire.</p><div class="row"><span class="badge">Supported</span><a class="btn btn-ghost" href="https://discord.gg/axonic" target="_blank">Get Script</a></div></article>
+  <article class="card game" data-name="30+ Games"><div class="game-icon">+</div><h3>30+ Games</h3><p>More supported games are available through the Axonic community.</p><div class="row"><span class="badge">30+ total</span><a class="btn btn-ghost" href="https://discord.gg/axonic" target="_blank">View Library</a></div></article>
+ </div>
+</div></section></main>
+<script>
+const s=document.getElementById('gameSearch'), cards=[...document.querySelectorAll('.game')];
+s.addEventListener('input',()=>{const q=s.value.toLowerCase();cards.forEach(c=>c.classList.toggle('hidden',!c.dataset.name.toLowerCase().includes(q)))});
+</script>
+
+<footer class="footer"><div class="container footer-inner">
+ <div>© 2026 Axonic. All rights reserved.</div>
+ <div class="footer-links"><a href="scripts.html">Scripts</a><a href="discord.html">Discord</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div>
+</div></footer>
+</body></html>
